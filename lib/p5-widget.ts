@@ -101,7 +101,7 @@ function replaceScriptWithWidget(el: HTMLScriptElement) {
   let baseSketchURL = absoluteURL(el.getAttribute('data-base-url'));
   let p5version = el.getAttribute('data-p5-version');
   let maxRunTime = parseInt(el.getAttribute('data-max-run-time'));
-  let autoplay = el.hasAttribute('data-autoplay');
+  let autoplay = true;//el.hasAttribute('data-autoplay');
   let url;
   let qsArgs = [
     'id=' + encodeURIComponent(el.getAttribute('data-id'))

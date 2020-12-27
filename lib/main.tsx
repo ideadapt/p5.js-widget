@@ -18,7 +18,7 @@ function start() {
   let qs = url.parse(window.location.search, true).query;
   let id = embeddingPageURL + '_' + qs['id'];
   let baseSketchURL = qs['baseSketchURL'] || embeddingPageURL;
-  let autoplay = (qs['autoplay'] === 'on');
+  let autoplay = true;
   let initialContent = qs['sketch'] || defaultSketchJS;
   let p5version = qs['p5version'] || defaults.P5_VERSION;
   let previewWidth = parseInt(qs['previewWidth']);
