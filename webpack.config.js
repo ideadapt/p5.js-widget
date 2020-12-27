@@ -1,7 +1,7 @@
 var _ = require('underscore');
 var webpack = require('webpack');
 
-var production = process.env.NODE_ENV === 'production';
+var production = true; //process.env.NODE_ENV === 'production';
 
 var baseConfig = {
   resolve: {
