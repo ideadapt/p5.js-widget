@@ -36,5 +36,5 @@ export default function makeImplicitSketch(code: string) {
     }
   }
 
-  return "function setup() { " + code + " }";
+  return "function setup() { createCanvas(400, 400)\n" + code + " }";
 }
