@@ -43,7 +43,7 @@ function loadScripts(urls: string[], cb?: () => void) {
 }
 
 function p5url(version: string) {
-  return `https://cdnjs.cloudflare.com/ajax/libs/p5.js/${version}/p5.js`;
+  return `https://cdnjs.cloudflare.com/ajax/libs/p5.js/${version}/p5.min.js`;
 }
 
 function LoopChecker(sketch: string, funcName: string, maxRunTime: number) {
